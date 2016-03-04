@@ -33,21 +33,16 @@ namespace ISD_Course_task_2
             FigurePointList.Add(pt3);
         }
         public Figure(Point pt1, Point pt2, Point pt3, Point pt4)
+            : this(pt2, pt3, pt4)
         {
             FigurePointList = new List<Point>();
             FigurePointList.Add(pt1);
-            FigurePointList.Add(pt2);
-            FigurePointList.Add(pt3);
-            FigurePointList.Add(pt4);
         }
         public Figure(Point pt1, Point pt2, Point pt3, Point pt4, Point pt5)
+            : this(pt2, pt3, pt4, pt5)
         {
             FigurePointList = new List<Point>();
             FigurePointList.Add(pt1);
-            FigurePointList.Add(pt2);
-            FigurePointList.Add(pt3);
-            FigurePointList.Add(pt4);
-            FigurePointList.Add(pt5);
         }
         public string GetName()
         {

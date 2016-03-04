@@ -93,7 +93,7 @@ namespace ISD_Course_task_2
             Console.WriteLine("Name: {0} {1}", Me.Name, Me.SecondName);
             Console.WriteLine("Age: {0}", Me.Age);
         }
-        public static void ExerciseSix() // Дописать это
+        public static void ExerciseSix()
         {
             Converter convert = new Converter(8, 10, 0.25);
             int summ;
@@ -120,7 +120,7 @@ namespace ISD_Course_task_2
         }
         public static void ExerciseSeven()
         {
-            Employee Fedya = new Employee("Fedor", "Voloshyn", "Jun", 0);
+            Employee Fedya = new Employee("Fedor", "Voloshyn", ProgrammerPosition.Junior, 0);
             Console.WriteLine("{0} {1}, {2}-developer.", Fedya.Name, Fedya.SecondName, Fedya.Position);
             Console.WriteLine("Payment: ${0}\nTax: ${1}", Fedya.CalculatePayment(), Fedya.CalculateTax());
         }
